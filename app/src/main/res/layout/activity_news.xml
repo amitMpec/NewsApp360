@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+
+<androidx.drawerlayout.widget.DrawerLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:openDrawer="start"
+    android:id="@+id/drawer"
+    android:fitsSystemWindows="true"
+    tools:context=".NewsActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#FFFFFF"
+            app:titleTextColor="@color/black"
+            >
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:minHeight="?actionBarSize"
+                android:paddingTop="16dp"
+                android:fontFamily="@font/bebasneue"
+                android:text="@string/app_name"
+                android:textColor="#20255A"
+                android:textSize="24dp"
+                android:letterSpacing="0.1"
+                android:layout_gravity="center_horizontal"
+                android:textAppearance="@style/TextAppearance.Widget.AppCompat.Toolbar.Title" />
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:tabGravity="fill"
+            app:tabIndicatorHeight="2dp"
+            app:tabSelectedTextColor="@color/black"
+            app:tabIndicatorColor="#ff4040"
+            app:tabTextAppearance="@style/tab_text"
+            app:tabMode="auto">
+
+            <com.google.android.material.tabs.TabItem
+                android:text="WORLD"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                />
+            <com.google.android.material.tabs.TabItem
+                android:text="BUSINESS"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content" />
+            <com.google.android.material.tabs.TabItem
+                android:text="TECH"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content" />
+            <com.google.android.material.tabs.TabItem
+                android:text="SPORTS"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content" />
+            <com.google.android.material.tabs.TabItem
+                android:text="ENTERTAINMENT"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content" />
+
+        </com.google.android.material.tabs.TabLayout>
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewPager2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appBarLayout" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.google.android.material.navigation.NavigationView
+    android:id="@+id/navigationView"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:layout_gravity="start"
+    android:fitsSystemWindows="true"
+    app:itemIconPadding="25dp"
+        app:itemIconSize="18dp"
+    app:itemTextAppearance="@style/Style_TextView"
+    app:headerLayout="@layout/nav_header"
+    app:menu="@menu/navigation_drawer" />
+
+</androidx.drawerlayout.widget.DrawerLayout>
+</layout>

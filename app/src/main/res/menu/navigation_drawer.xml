@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+        <item
+            android:id="@+id/home1"
+            android:icon="@drawable/ic_home"
+            android:title="Home"
+             />
+        <item
+            android:id="@+id/bookmarksNews"
+            android:icon="@drawable/ic_bookmarks"
+            android:title="Bookmarks" />
+        <item
+            android:id="@+id/settingsNews"
+            android:icon="@drawable/ic_settings"
+            android:title="Settings" />
+    <item
+        android:id="@+id/about"
+        android:icon="@drawable/ic_about"
+        android:title="About" />
+    <item
+        android:id="@+id/shareNews"
+        android:icon="@drawable/ic_share"
+        android:title="Invite Friends" />
+
+    <item
+        android:id="@+id/rateUs"
+        android:icon="@drawable/ic_rateus"
+        android:title="Rate Us" />
+
+
+</menu>
