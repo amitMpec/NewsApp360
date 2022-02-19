@@ -1,6 +1,7 @@
 # NewsApp360 for showcase
 
-![n360](https://user-images.githubusercontent.com/74000778/154791726-92a32d50-ee51-48d6-9027-eacc7e637ebd.png)
+![newshow](https://user-images.githubusercontent.com/74000778/154792661-3c960ab4-7bb0-4aa7-a80c-6f099d72755e.png)
 
 
-![newsapp360](https://user-images.githubusercontent.com/74000778/154791708-009c1575-862f-4ef2-94a1-1bd12d4eb5bf.png)
+
+![nesws360new](https://user-images.githubusercontent.com/74000778/154792808-5090f278-4b2a-46a7-bd71-a882df4382e2.png)
